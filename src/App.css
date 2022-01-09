@@ -1,0 +1,119 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+.container {
+  margin: 100px auto 0;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tab_buttons {
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.274);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  /* border-bottom: 1px solid rgb(88, 147, 241); */
+}
+.tabs {
+  padding: 14px;
+  width: 20%;
+  background: white;
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.active-tabs  {
+  padding-bottom: 12px;
+  background: white;
+  border-bottom: 2px solid rgb(79, 139, 236)
+}
+
+button {
+  border: none;
+}
+
+.tabs_content {
+  flex-grow : 1;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+
+.content p {
+  width: 100%;
+  height: 100%;
+}
+
+.active-content {
+  display: block;
+}
+
+
+fieldset {
+  margin-bottom: 0.5rem;
+  padding:1.3rem;
+  width: 20%;
+ 
+}
+
+legend {
+  font-size: .9rem;
+}
+
+.btn {
+  padding: 10px;
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+  
+.submit {
+  background-color: rgb(79, 139, 236);
+}
+
+.btn-disabled {
+  padding: 10px;
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-color: #ccd;
+  cursor: not-allowed;
+}
+
+.user-info {
+  margin-left: 110px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info p {
+  margin-bottom: 0.4rem;
+}
